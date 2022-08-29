@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css"/>
+    <script src="./../login.js" defer></script>
+    <script src="https://kit.fontawesome.com/b108c7dc53.js" crossorigin="anonymous"></script>
+    <title>Fishcontent Indonesia | login</title>
+  </head>
+  <body class=" bg-login bg-cover  font-poppins ">
+    <header class="">
+      <nav class="">
+        <div class="container relative flex justify-between lg:justify-end mx-auto py-6 ">
+          <a class="flex items-center gap-4 " >
+            <img
+              src="./../../images/icon.png"
+              alt="logo"
+              class="max-w-[3rem] rounded-md"
+            />
+            <span class="text-base text-black max-w-[7rem] md:text-lg md:max-w-max lg:text-2xl uppercase font-bold ">fishcontent indonesia</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full min-h-[85vh] flex items-center justify-center">
+        <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6 lg:gap-0 mx-auto justify-center lg:flex-row lg:justify-between  ">
+            <div class="basis-2/5 lg:mt-[1%]">
+                <h2 class="text-center text-2xl mb-5 leading-normal lg:text-left lg:text-3xl xl:text-4xl xl:leading-[1.6] lg:leading-[1.6] ">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
+                <p class="text-lg hidden lg:block font-medium opacity-100">Belum memililki akun ?, lakukan registrasi<a class="text-blue-700" href="./regis.html"> disini!</a></p>
+            </div>
+            <div class="basis-96 ">
+                <div class="flex p-5 bg-red-300 gap-4 rounded-xl items-center mb-6 justify-between">
+                    <div class="flex gap-4 lg:gap-7 items-center">
+                        <div class="w-8 flex-shrink-0"><img src="https://img.icons8.com/ios/50/000000/cancel.png"/></div>
+                        <div>
+                            <h3 class="text-base font-bold  sm:font-medium sm:text-lg mb-1">Error</h3>
+                            <p class="text-sm font-medium sm:text-base">Akun tidak ditemukan </p>
+                        </div>
+                    </div>
+                    <button class="toast-toggler "><img src="https://img.icons8.com/external-gradak-royyan-wijaya/30/000000/external-delete-gradak-interface-gradak-royyan-wijaya.png"/></button>
+                </div>
+                <form action="" class="width-full">
+                    <div class="relative mb-5">
+                        <label for="email-in" class="text-base block lg:text-lg font-medium mb-1">Masukkan Email</label>
+                        <input type="email" value="" name="Email" class="input" id="email-in"  >
+                        <small class="mt-2 text-red-600 hidden validate"></small>
+                    </div>
+                    <div class="relative mb-2 ">
+                        <label for="password required-in" class="text-base block lg:text-lg font-medium mb-1">Masukkan password</label>
+                        <input type="password" name="Password" value="" class="input"  id="pasword-in" >
+                        <button class="absolute top-[2.7rem] right-2.5 text-slate-400 hover:text-slate-800 peer-invalid:bottom-[3.4rem]"><i class="fa-solid fa-eye"></i></button>
+                        <small class="text-red-600 mt-2 hidden validate"></small>
+                    </div>
+                    <a href="" class="block text-right mb-8 ">lupa password?</a>
+                    <input type="submit" value="Login" class="btn btn-third w-full">
+                    <p class="mt-5 text-base font-medium opacity-100 lg:hidden">Belum memililki akun ?, lakukan registrasi<a class="text-blue-700" href="./regis.html"> disini!</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

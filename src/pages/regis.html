@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css"/>
+    <script src="https://kit.fontawesome.com/b108c7dc53.js" crossorigin="anonymous"></script>
+    <script src="./../swiper-bundle.js" defer></script>
+    <script src="./../regis.js" defer></script>
+    <title>Fishcontent Indonesia | registrasi</title>
+  </head>
+  <body class=" bg-login bg-cover font-poppins ">
+    <header class="">
+      <nav class="">
+        <div class="container relative flex justify-between lg:justify-end mx-auto py-6 ">
+          <a class="flex items-center gap-4 ">
+            <img
+              src="./../../images/icon.png"
+              alt="logo"
+              class="max-w-[3rem] rounded-md"
+            />
+            <span class="text-base text-black max-w-[7rem] md:text-lg md:max-w-max lg:text-2xl uppercase font-bold">fishcontent indonesia</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full min-h-[85vh] my-16 sm:my-0 flex items-center justify-center">
+        <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6  lg:gap-0 mx-auto  justify-center lg:flex-row lg:justify-between  ">
+            <div class=" basis-2/5 md:mt-16 lg:mt-[7%]">
+                <h2 class="text-center text-xl mb-5 sm:text-2xl md:text-3xl md:leading-normal lg:text-3xl lg:leading-normal xl:leading-[1.5] lg:text-left xl:text-4xl">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
+                <p class="text-lg hidden lg:block font-medium opacity-100">Sudah memiliki akun ?, login <a class="text-blue-700" href="./login.html"> disini!</a></p>
+            </div>
+            <div class="basis-[45%] ">
+                <div class="flex p-5 bg-green-300 gap-4 rounded-xl items-center mb-6 justify-between">
+                    <div class="flex gap-4 lg:gap-7 items-center ">
+                        <div class="w-8 flex-shrink-0"><img src="https://img.icons8.com/ios/50/000000/cancel.png"/></div>
+                        <div>
+                            <h3 class="text-base font-bold  sm:font-medium sm:text-lg mb-1">Berhasil</h3>
+                            <p class="text-sm font-medium sm:text-base ">Pembuatan akun telah berhasil , cek email anda untuk melakukan verifikasi</p>
+                        </div>
+                    </div>
+                    <button class="toast-toggler w-12 "><img src="https://img.icons8.com/external-gradak-royyan-wijaya/30/000000/external-delete-gradak-interface-gradak-royyan-wijaya.png"/></button>
+                </div>
+                <form action="" class="width-full">
+                    <div class="flex flex-col sm:flex-row   gap-2 lg:gap-8">
+                        <div class=" basis-1/2 relative mb-2">
+                            <label for="name-in" class="text-base block lg:text-lg font-medium mb-1">Nama</label>
+                            <input type="text" value="" name="Nama"  class="input"  id="name-in"  >
+                            <small class="mt-2 text-red-600 hidden validate"></small>
+                        </div>
+                        <div class="basis-1/2  relative mb-2">
+                            <label for="telp-in" class="text-base block lg:text-lg font-medium mb-1">Telepon</label>
+                            <input type="tel" name="Telp" value=""  placeholder="08" name="telp" class="input"  id="telp-in"  >
+                            <small class="text-red-600 mt-2 hidden validate"></small>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row   gap-2 lg:gap-8">
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="email-in" class="text-base block lg:text-lg font-medium mb-1">Email</label>
+                            <input type="email" name="Email" value=""  class="input" name="pasword" id="email-in" >
+                            <small class="mt-2 text-red-600 hidden validate"></small>
+                        </div>
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="prov-in" class="text-base block lg:text-lg font-medium mb-1">Provinsi</label>
+                            <select name="Provinsi" value="" class="input" name="pasword" id="prov-in"  >
+                                <option value=""  disabled selected >Pilihan Provinsi</option>
+                            </select>
+                            <small class="text-red-600 mt-2 hidden validate"></small>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-2 lg:gap-8">
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="kab-in" class="text-base block lg:text-lg font-medium mb-1">Kabupaten</label>
+                            <select name="Kabupaten / Kota" value="" class="input" name="pasword" id="kab-in"  >
+                                <option value="" selected disabled >Pilihan Kabupaten / Kota</option>
+                            </select>
+                            <small class="text-red-600 mt-2 hidden validate"></small>
+                        </div>
+                        
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="kel-in" class="text-base block lg:text-lg font-medium mb-1">Kecamatan</label>
+                            <select name="Kecamatan" value="" class="input" name="pasword" id="kel-in"  >
+                                <option value="" selected disabled >Pilihan Kecamatan</option>
+                            </select>
+                            <small class="text-red-600 mt-2 hidden validate"></small>
+                        </div>
+                        
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-2 lg:gap-8">
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="detail-in" class="text-base block lg:text-lg font-medium mb-1">Detail</label>
+                            <input type="text" name="Detail" value="" class="input" name="pasword" id="detail-in" >
+                            <small class="mt-2 text-red-600 hidden validate"></small>
+                        </div>
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="postC-in" class="text-base block lg:text-lg font-medium mb-1">Kode pos</label>
+                            <input type="zip" name="Kode pos" value=""  class="input" name="pasword" id="postC-in" >
+                            <small class="mt-2 text-red-600 hidden validate"></small>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-2 lg:gap-8">
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="password-in" class="text-base block lg:text-lg font-medium mb-1">Password</label>
+                            <input type="password" name="Password" value="" class="input" name="pasword" id="pasword-in"   >
+                            <button class="absolute top-10 right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
+                            <small class="text-red-600 mt-2 hidden validate"></small>
+                        </div>
+                        <div class="basis-1/2  relative mb-2 ">
+                            <label for="passwordConfirm-in" class="text-base block lg:text-lg font-medium mb-1">Konfirmasi Password</label>
+                            <input type="password" name="Konfirmasi Password" value="" class="input" name="pasword" id="paswordConfir-in" >
+                            <button class="absolute top-10 right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
+                            <small class="text-red-600 mt-2 hidden validate">Password tidak sama</small>
+                        </div>
+                    </div>
+                    <input type="submit" value="Buat akun" class="mt-8 btn btn-third w-full">
+                    <p class="mt-5 text-base text-center lg:text-left font-medium opacity-100 lg:hidden">Sudah memililki akun ?, login<a class="text-blue-700" href="./login.html"> disini!</a></p>
+                </form>
+            </div>  
+        </div>
+    </main>
+
+  
+  </body>
+</html>

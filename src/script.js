@@ -2,10 +2,11 @@
 const navLinks = document.querySelector('.nav__links')
 const navToggler = document.querySelector('.nav__toggler');
 
-navToggler.onclick = () => {
-    navToggler.classList.toggle('active');
-    navLinks.classList.toggle('nav__links--active');
-
+if(navToggler){
+    navToggler.onclick = () => {
+        navLinks.classList.toggle('nav__links--hidden');
+        navLinks.classList.toggle('nav__links--active');
+    }
 }
 
 const herosection = new Swiper(".hero-sections", {
@@ -15,17 +16,17 @@ const herosection = new Swiper(".hero-sections", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    pagination : {
-        el : ".swiper-pagination",
-        "clickable" : true
+    pagination: {
+        el: ".swiper-pagination",
+        "clickable": true
     }
 });
-const  testimonial = new Swiper(".testimonial", {
+const testimonial = new Swiper(".testimonial", {
     spaceBetween: 100,
     centeredSlides: true,
     autoplay: {
@@ -37,8 +38,12 @@ const  testimonial = new Swiper(".testimonial", {
         el: ".swiper-pagination",
         clickable: true,
     },
-
 });
+
+
+
+
+
 
 
 

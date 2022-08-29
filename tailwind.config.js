@@ -9,15 +9,11 @@ module.exports = {
             'poppins': 'Poppins , sans-serif'
         },
 
-        colors:{
-            'primary': '#ea580c'  ,
-            'secondary': '#0f172a',
-            'accent' : '#fff',
-            'neutral-1' : '#000000',
-            'hover-1': '#fb923c',
-            'hover-2': '#94a3b8'
-        },
         extend: {
+            backgroundImage : {
+                login : "url('./..//images/texture.svg') "
+             },
+             
             keyframes : {
                 slidetobottom : {
                     '0%' : {
@@ -30,12 +26,33 @@ module.exports = {
                         transformOrigin: "top",
                         transform: "scaleY(1)"
                     }
+                },
+                fade : {
+                    '0%' : {
+                        opacity : 0,
+                    }
+                    ,
+                    '100%' : {
+                        opacity : 1 
+                    }
                 }
+
+            },
+            
+            colors: {
+                'primary': '#ea580c',
+                'secondary': '#0f172a',
+                'accent': '#fff',
+                'neutral-1': '#000000',
+                'hover-1': '#fb923c',
+                'hover-2': '#94a3b8'
             },
             animation :{
-                slidetobottom : 'slidetobottom .3s ease-in-out'
+                slidetobottom : 'slidetobottom .3s ease-in',
+                fade : 'fade .5s ease-in',
+                'fade-reverse' : 'fade .5s ease-in reverse',
+                'slidetobottom-reverse' : 'slidetobottom .3s ease-in reverse'
             }
-            
         },
     },
     plugins: [

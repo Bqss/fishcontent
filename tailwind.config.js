@@ -13,7 +13,15 @@ module.exports = {
             backgroundImage : {
                 login : "url('./..//images/texture.svg') "
              },
+
+             backgroundPosition: {
+                sidebar : 'center '
+             },
+             backgroundSize : {
+                '1.25': '100rem 75rem'
+             }
              
+             ,
             keyframes : {
                 slidetobottom : {
                     '0%' : {

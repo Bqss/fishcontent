@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./../../dist/style.css" />
+    
     <script src="https://kit.fontawesome.com/b108c7dc53.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="./../../dist/style.css" />
     <title>Fishcontent Indonesia | edukasi</title>
 </head>
 <body class="font-poppins bg-slate-100">
@@ -42,39 +45,19 @@
     <main class="container mx-auto">
         <h2 class="text-center mt-28">Ruang Edukasi</h2>
         <p class="text-center mt-8">Tempat dimana kamu bisa belajar perikanan dan akuatik!</p>
-        <!-- <div class="mt-36" >
-            <section class=" py-6 text-center items-center gap-16 flex flex-col md:flex-row md:text-left md:py-36    ">
-                <div class="basis-1/2">
-                    <img src="./../../images/ed1.png" alt="ini cupang" class="h-full mx-auto ">
+        <form class="flex items-center">   
+            <label for="simple-search" class="sr-only">Cari kursus</label>
+            <div class="relative w-full">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                 </div>
-                <div class="basis-1/2">
-                    <h3 class="mb-5 text-xl font-bold lg:mb-12 xl:text-4xl">Cara berternak ikan cupang</h3>
-                    <p class="text-sm mb-12  lg:text-base xl:text-lg">Disini kamu akan belajar cara membudidayakan ikan cupang secara lengkap. Materi disajikan melalui vidio dan juga E-Book pembelajaran. Kamu juga bisa belajar secara syncronous dengan menghubungi tentor yang tersedia. </p>
-                    <button class="btn btn-third">Belajar sekarang</button>
-                </div>
-            </section>
-            <section class=" py-6 text-center items-center gap-16 flex flex-col md:flex-row-reverse md:text-left md:py-36    ">
-                <div class="basis-1/2">
-                    <img src="./../../images/grapes.png" alt="ini cupang" class="h-full mx-auto  ">
-                </div>
-                <div class="basis-1/2">
-                    <h3 class="mb-5 text-xl font-bold lg:mb-12 xl:text-4xl">Best Fresh Grapes </h3>
-                    <p class="text-sm mb-12  lg:text-base xl:text-lg">but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be.</p>
-                    <button class="btn btn-third">Buy now</button>
-                </div>
-            </section>
-            <section class=" py-6 text-center items-center gap-16 flex flex-col md:flex-row md:text-left md:py-36    ">
-                <div class="basis-1/2">
-                    <img src="./../../images/gauva.png" alt="ini cupang" class="h-full   mx-auto">
-                </div>
-                <div class="basis-1/2">
-                    <h3 class="mb-5 text-xl font-bold lg:mb-12 xl:text-4xl">Best Fresh Gauva </h3>
-                    <p class="text-sm mb-12  lg:text-base xl:text-lg">but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be.</p>
-                    <button class="btn btn-third">Buy now</button>
-                </div>
-            </section>
-        </div>
-         -->
+                <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+            </div>
+            <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <span class="sr-only">Search</span>
+            </button>
+        </form>
         <div class="container mx-auto my-16 gap-10 grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 ">
 
             <section class=" flex  flex-col transition-all duration-400 gap-10 bg-white p-8 rounded-xl shadow-xl hover:cursor-pointer hover:-translate-y-4  hover:scale-[1.02] hover:shadow-3xl">

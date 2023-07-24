@@ -16,3 +16,6 @@
 
 <h2> For Production Level : </h2>
 <li> Please follow this link https://docs.adonisjs.com/guides/deployment
+
+<h2>For preview <h2>
+<li>visit https://fishcontent.my.id/</li>

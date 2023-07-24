@@ -18,4 +18,5 @@
 <li> Please follow this link https://docs.adonisjs.com/guides/deployment
 
 <h2>For preview <h2>
-<li>visit https://fishcontent.my.id/</li>
+<li>visit https://fishcontent.my.id/
+<li>demo account -> email: demo@gmail.com   | password: demo
